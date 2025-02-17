@@ -1,0 +1,28 @@
+{
+  "monorepo": true,
+  "root": "apps/reservations",
+  "sourceRoot": "apps/reservations/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/reservations/tsconfig.app.json"
+  },
+  "projects": {
+    "reservations": {
+      "type": "application",
+      "root": "apps/reservations",
+      "entryFile": "main",
+      "sourceRoot": "apps/reservations/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/reservations/tsconfig.app.json"
+      }
+    },
+    "common": {
+      "type": "library",
+      "root": "libs/common",
+      "sourceRoot": "libs/common/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/common/tsconfig.lib.json"
+      }
+    }
+  }
+}
