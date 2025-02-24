@@ -7,13 +7,13 @@
     "tsConfigPath": "apps/reservations/tsconfig.app.json"
   },
   "projects": {
-    "reservations": {
+    "auth": {
       "type": "application",
-      "root": "apps/reservations",
+      "root": "apps/auth",
       "entryFile": "main",
-      "sourceRoot": "apps/reservations/src",
+      "sourceRoot": "apps/auth/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/reservations/tsconfig.app.json"
+        "tsConfigPath": "apps/auth/tsconfig.app.json"
       }
     },
     "common": {
@@ -22,6 +22,15 @@
       "sourceRoot": "libs/common/src",
       "compilerOptions": {
         "tsConfigPath": "libs/common/tsconfig.lib.json"
+      }
+    },
+    "reservations": {
+      "type": "application",
+      "root": "apps/reservations",
+      "entryFile": "main",
+      "sourceRoot": "apps/reservations/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/reservations/tsconfig.app.json"
       }
     }
   }
